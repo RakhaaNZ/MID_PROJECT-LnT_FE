@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid Project</title>
+
+    <link rel="stylesheet" href="signStyle.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="signScript.js" defer ></script>
+</head>
+<body>
+
+    <!-- Preload -->
+    <div class="loadPage">
+        <div class="preload">
+            <div class="load"></div>
+            <h2 data-text="&nbsp;Loading&nbsp;">&nbsp;Loading&nbsp;</h2>
+        </div>
+    </div>
+    <!-- Preload -->
+
+    <section id="LOGIN">
+        <div class="container">
+            <div class="bg">
+                <div class="logo">
+                    <img src="/Asset/Logo/logo.png" alt="Logo">
+                </div>
+                <div class="card">
+                    <div class="left">
+                        <div class="headline">
+                            <h1>Sign In</h1>
+                        </div>
+                        <form action="" id="form" name="form" onsubmit="return validateLog()">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username">
+                            <label for="name" class="error"></label>
+
+                            <label for="email"> E-Mail</label>
+                            <input type="email" name="email" id="email">
+
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+
+                            <div class="acc">
+                                <h2>Already Have an Account? <a href="/log.html"><span class="txtclr">Log in</span></a></h2>
+                            </div>
+
+                            <div class="bttn">
+                                <input type="submit" value="SIGN IN" id="submit-btn" onclick="return validate()">
+                            </div>
+                        </form>
+                        <div class="sosmed">
+                            <ul>
+                                <div></div>
+        
+                                <li>
+                                    <a href="https://twitter.com/Rakhaanlz" target='_blank'>
+                            
+                                        <span class="fa fa-facebook"></span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://twitter.com/Rakhaanlz" target='_blank'>
+                            
+                                        <span class="fa fa-twitter"></span>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="https://www.instagram.com/rakhaanlz/" target='_blank'>
+                            
+                                        <span class="fa fa-instagram"></span>
+                                    </a>
+                                </li>
+        
+                                <div></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="hero">
+                            <img src="/Asset/BG_Log/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

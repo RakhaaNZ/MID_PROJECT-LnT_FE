@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/812136cf50.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="script.js" defer ></script>
+    
+</head>
+<body>
+
+    <!-- Preload -->
+    <div class="loadPage">
+        <div class="preload">
+            <div class="load"></div>
+            <h2 data-text="&nbsp;Loading&nbsp;">&nbsp;Loading&nbsp;</h2>
+        </div>
+    </div>
+    <!-- Preload -->
+
+    <!-- Landing Page -->
+    <section id="HOME">
+        <div class="container">
+            <div class="navbar" id="navbar">
+                <div class="logo" id="logo">
+                    <img src="/Asset/Logo/logo.png" alt="Logo">
+                </div>
+                <div class="menu" id="menu">
+                    <ul>
+                        <li><a href="#HOME">HOME</a></li>
+                        <li><a href="#ABOUT">ABOUT</a></li>
+                        <li><a href="#CLASS">CLASS</a></li>
+                        <li><a href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="log" id="loginBtn" onclick="login()">
+                    <div class="login">
+                        <a href="/log.html"><h1>LOG IN</h1></a>
+                    </div>
+                    <div class="signin">
+                        <a href="/sign.html"><h1>SIGN IN</h1></a>
+                    </div>
+                </div>
+                <div class="user" id="user">
+                    <H1>USER</H1>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <input type="checkbox" id="checkbar" class="checkbar">
+                        <label for="checkbar">
+                            <i class="fa-solid fa-bars" id="open"></i>
+                            <i class="fa-solid fa-xmark" id="close"></i>
+                        </label>
+                    <div class="mR" id="menu">
+                        <ul>
+                            <li><a href="#HOME">HOME</a></li>
+                            <li><a href="#ABOUT">ABOUT</a></li>
+                            <li><a href="#CLASS">CLASS</a></li>
+                            <li><a href="#CONTACT">CONTACT US</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="content">
+                <div class="top">
+                    <div class="text">
+                        <h1>Learning For Your<br><span class="txtclr">Dream</span></h1>
+                        <h2>Achieve Your Dream With Us</h2>
+                        <div class="class-btn">
+                            <a href="#regcls"><h1>Get Class</h1></a>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <img src="/Asset/LandingPage/hero.png" alt="hero">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="shape">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Landing Page -->
+
+    <!-- About Page -->
+    <section id="ABOUT">
+        <div class="container">
+            <div class="head">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <div class="head">
+                        <h1>Inspiring And Assisting Beginner <span class="txtclr">Programmers</span><br>To Achieve Their Dreams.</h1>
+                    </div>
+                    <div class="visi">
+                        <h1>Our Vision</h1>
+                        <p>To become the leading community of programming learners in the world,<br>providing high quality content and supporting the career growth of our users.</p>
+                    </div>
+                    <div class="misi">
+                        <h1>Our Mission</h1>
+                        <ul>
+                            <li>To provide easily understandable and well-structured content<br>to accelerate programming learning for our users.</li>
+                            <li>To enhance the quality of our services by integrating<br>user feedback and the latest technology.</li>
+                            <li>To develop a strong community of programming learners<br>who support and motivate each other.</li>
+                            <li>To promote equality and inclusivity in the programming industry,<br>by providing opportunities for anyone to learn and grow.</li>
+                            <li>To improve the programming skills and knowledge of our users,<br>so that they can achieve success in their careers.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="com">
+                        <img src="/Asset/About/hero.png" alt="">
+                    </div>
+                    <div class="tab">
+                        <img src="/Asset/About/hero2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Page -->
+
+    <!-- Team Page -->
+    <section id="TEAM">
+        <div class="container">
+            <div class="head">
+                <h1>Our Team</h1>
+            </div>
+            <div class="content">
+
+                <div class="card">
+                    <div class="left">
+                        <div class="img">
+                            <img src="/Asset/Team/R.png" alt="hero1">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="headline">
+                            <h1>Founder</h1>
+                            <h2>Rakha Naufal</h2>
+                            <h3>Founder/ CEO of V-Tech</h3>
+                        </div>
+                        <div class="footline">
+                            <div class="line"></div>
+                            <div class="sosmed">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="left">
+                        <div class="img">
+                            <img src="/Asset/Team/S.png" alt="hero1">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="headline">
+                            <h1>Software Engineer</h1>
+                            <h2>Steve Mark</h2>
+                            <h3>Software Engineer of V-Tech</h3>
+                        </div>
+                        <div class="footline">
+                            <div class="line"></div>
+                            <div class="sosmed">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="left">
+                        <div class="img">
+                            <img src="/Asset/Team/A.png" alt="hero1">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="headline">
+                            <h1>Website Developer</h1>
+                            <h2>Andrew Bruce</h2>
+                            <h3>Website Developer of V-Tech</h3>
+                        </div>
+                        <div class="footline">
+                            <div class="line"></div>
+                            <div class="sosmed">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="left">
+                        <div class="img">
+                            <img src="/Asset/Team/B.png" alt="hero1">
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="headline">
+                            <h1>UI/UX Designer</h1>
+                            <h2>Bruce Max</h2>
+                            <h3>UI-UX Designer of V-Tech</h3>
+                        </div>
+                        <div class="footline">
+                            <div class="line"></div>
+                            <div class="sosmed">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-square-twitter"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Team Page -->
+
+    <!-- Class Page -->
+    <section id="CLASS">
+        <div class="container">
+            <div class="shape-top">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="head" id="regcls">
+                <h1>Class</h1>
+            </div>
+            <div class="content">
+                <div class="card">
+                    <div class="top">
+                        <img src="/Asset/Class/UI.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h1>UI/UX Designer</h1>
+                        <h2>UI/UX & Graphic Designer Class</h2>
+                        <div class="btn-regis">
+                            <h1>Register</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="/Asset/Class/FE.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h1>Website Developer</h1>
+                        <h2>Full-Stack Developer Class</h2>
+                        <div class="btn-regis">
+                            <h1>Register</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="top">
+                        <img src="/Asset/Class/BE.png" alt="">
+                    </div>
+                    <div class="bottom">
+                        <h1>Software Developer</h1>
+                        <h2>Software Developer Class</h2>
+                        <div class="btn-regis">
+                            <h1>Register</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Class Page -->
+
+    <!-- Contact Page -->
+    <section id="CONTACT">
+        <div class="container">
+            <div class="headline">
+                <h1>Contact</h1>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <img src="/Asset/Contact/1.png" alt="logo1">
+                </div>
+                <div class="mid">
+                    <div class="card">
+                        <form action="" id="form" name="form" onsubmit="return validateForm()">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Your Name">
+                            <label for="name" class="error"></label>
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                            <label for="Subject">Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="Subject">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Input Your Massage Here..."></textarea>
+                            <div class="btn-send">
+                                <input type="submit" value="SEND">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="/Asset/Contact/2.png" alt="logo2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Page -->
+
+    <!-- Footer -->
+    <section id="FOOTER">
+        <div class="container">
+            <div class="top">
+                <div class="left">
+                    <div class="logo">
+                        <img src="/Asset/Logo/logo.png" alt="logo">
+                        <h1>Learning For Your Dream</h1>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="s1">
+                        <h1>Start Your Career</h1>
+                        <h2>UI Designer</h2>
+                        <h2>UX Designer</h2>
+                        <h2>Website Developer</h2>
+                        <h2>Software Developer</h2>
+                    </div>
+
+                    <div class="s2">
+                        <h1>Company</h1>
+                        <h2>About</h2>
+                        <h2>Our Team</h2>
+                        <h2>Contact</h2>
+                    </div>
+
+                    <div class="s3">
+                        <h1>Class</h1>
+                        <h2>UI/UX Design</h2>
+                        <h2>Website Developer</h2>
+                        <h2>Software Developer</h2>
+                    </div>
+
+                    <div class="s4">
+                        <h1>Languange</h1>
+                        <h2>English (US)</h2>
+                        <h2>Indonesia</h2>
+                    </div>
+
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="line"></div>
+                <div class="sosmed">
+                    <ul>
+                        <div></div>
+
+                        <li>
+                            <a href="https://twitter.com/Rakhaanlz" target='_blank'>
+                    
+                                <span class="fa fa-facebook"></span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://twitter.com/Rakhaanlz" target='_blank'>
+                    
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.instagram.com/rakhaanlz/" target='_blank'>
+                    
+                                <span class="fa fa-instagram"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/Rakhaanlz" target='_blank'>
+                    
+                                <span class="fa fa-github"></span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/rakha-naufal-azizi-681b60253/" target='_blank'>
+                    
+                                <span class="fa fa-linkedin"></span>
+                            </a>
+                        </li>
+                        <div></div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+</body>
+</html>

@@ -1,0 +1,389 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.txtclr {
+    color: #7C8EEF;
+}
+
+.loadPage {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+	height: 100vh;
+	box-shadow: 0px 0px 20px black;
+    background: #D9DFF4;
+    z-index: 9999;
+}
+
+.load {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    margin-bottom: 25px;
+}
+
+.load::before,
+.load::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+}
+
+.load::before {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, #533cc7 0%, #7C8EEF 100%);
+    animation: spin .4s infinite linear; 
+}
+
+.load::after {
+    width: 85%;
+    height: 85%;
+    background-color: #D9DFF4;
+    animation: spin .4s infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.preload h2 {
+    font-size: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preload h2 {
+    content: attr(data-text);
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    background: -webkit-linear-gradient(120deg, #778af1 0%, #bac3f1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    border-left: 4px #533cc7 solid;
+    border-right: 4px #533cc7 solid;
+    animation: animasi 4s linear infinite;
+    filter: drop-shadow(0 0 20px white) drop-shadow(0 0 50px white);
+}
+
+@keyframes animasi {
+    0%,10%,100%
+    {width: 0;}
+    70%,90%
+    {width: 400px;}
+}
+
+#LOGIN .container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+#LOGIN .container .bg {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/Asset/BG_Log/BG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#LOGIN .container .bg .logo {
+    position: fixed;
+    display: flex;
+    left: 20px;
+    top: 20px;
+}
+
+#LOGIN .container .card {
+    width: 1100px;
+    height: 571px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+}
+
+#LOGIN .container .card .left {
+    display: flex;
+    flex-direction: column;
+    padding-block: 40px;
+    width: 400px;
+    align-items: center;
+}
+
+#LOGIN .container .card .left .headline {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#LOGIN .container .card .left .headline h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: #191C1F;
+}
+
+#LOGIN .container .card .left form {
+    display: flex;
+    flex-direction: column;
+}
+
+#LOGIN .container .card .left form label {
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #2B2C34;
+    margin-bottom: 4px;
+}
+
+#LOGIN .container .card .left form input {
+    width: 264px;
+    height: 30px;
+    font-style: normal;
+    background: #D9DFF4;
+    border-radius: 40px;
+    border: #D1D1E9 2px solid;
+    outline: #FFFFFE;
+    padding-inline: 20px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    caret-color: #3b2c87;
+}
+
+#LOGIN .container .card .left .acc {
+    display: flex;
+    text-align: center;
+}
+
+#LOGIN .container .card .left .acc h2 {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #2B2C34;
+    margin-block: 15px;
+}
+
+#LOGIN .container .card .left form label.error {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+    position: relative;
+    /* top: -12px; */
+}
+
+#LOGIN .container .card .left form .bttn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#LOGIN .container .card .left form .bttn input{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background: #6246EA;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+input[type="submit"] {
+    font-style: bold;
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 20px;
+    color: #FFFFFE;
+}
+
+
+#LOGIN .container .card .left form .bttn input:hover {
+    background: #533cc7;
+    transition: background 0.2s ease-in-out;
+} 
+
+#LOGIN .container .card .left form .bttn:after {
+    background: #FFFFFE;
+    position: relative;
+    display: flex;
+    content: "";
+    height: 72px;
+    left: -180px;
+    opacity: 0.2;
+    top: 4px;
+    transform: rotate(30deg);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 20px;
+    z-index: 100;
+}
+  
+#LOGIN .container .card .left form .bttn:hover:after {
+    left: 10%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#LOGIN .container .card .left .sosmed {
+	position: relative;
+	width: 100%;
+	height: 200px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#LOGIN .container .card .left .sosmed a {
+    text-decoration: none;
+}
+
+#LOGIN .container .card .left .sosmed ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 0;
+}
+
+#LOGIN .container .card .left .sosmed ul li {
+    position: relative;
+    list-style: none;
+    width: 35px;
+    height: 35px;
+    margin: 0 20px;
+}
+
+#LOGIN .container .card .left .sosmed ul div {
+    width: 88px;
+    height: 5px;
+    background-color: #6246EA;
+    margin: auto;
+    position: relative;
+    display: flex;
+}
+
+#LOGIN .container .card .left .sosmed ul li span {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    background: #191C1F;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px !important;
+    transition: 1.1s ease-out;
+}
+
+.sosmed ul li:hover span {
+    transition: .3s;
+}
+
+.sosmed ul li:nth-child(2):hover span {
+    background: #4267B2 !important;
+}
+
+.sosmed ul li:nth-child(3):hover span {
+    background: #1DA1F2 !important;
+}
+
+.sosmed ul li:nth-child(4):hover span {
+    background: #E1306C !important;
+}
+
+#LOGIN .container .card .right .hero img {
+    position: relative;
+    z-index: 99;
+}
+
+@media only screen and (max-width: 1024px){
+
+    #LOGIN .container .card {
+        width: 448px;
+        height: 581px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        background: #FFFFFE;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #LOGIN .container .card .right .hero img {
+        display: none;
+    }
+
+    #LOGIN .container .card .left {
+        position: relative;
+        top: 70px;
+    }
+
+    #LOGIN .container .card .left form .bttn input{
+        margin-top: 0px;
+    }
+
+    #LOGIN .container .card .left .sosmed {
+        position: relative;
+        top: -60px;
+    }
+
+    #LOGIN .container .card .left .sosmed ul div {
+        width: 110px;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+}
+
+@media only screen and (max-width: 480px){
+
+}
